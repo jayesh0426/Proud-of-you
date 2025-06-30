@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Proud of You Kiwi❤️</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #f9e7e7, #ffeaea);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      text-align: center;
+      position: relative;
+      max-width: 90%;
+    }
+
+    .card h1 {
+      font-size: 2.5em;
+      color: #ff4b5c;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    .hearts {
+      position: absolute;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    .heart {
+      width: 20px;
+      height: 20px;
+      background: #ff4b5c;
+      transform: rotate(-45deg);
+      animation: pulse 1.5s infinite ease-in-out;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background: #ff4b5c;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 10px;
+      top: 0;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1) rotate(-45deg); }
+      50% { transform: scale(1.2) rotate(-45deg); }
+      100% { transform: scale(1) rotate(-45deg); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-10px); }
+    }
+
+    footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="hearts">
+      <div class="heart"></div>
+      <div class="heart" style="animation-delay: 0.3s;"></div>
+      <div class="heart" style="animation-delay: 0.6s;"></div>
+    </div>
+    <h1>I'm soo Proud of You Shreya❤️❤️</h1>
+    <p>Aur mere liye ek Gaana ga do pyara sa 🥺.<br>Baby!</p>
+  </div>
+  <footer>Made with ❤️ by Your Love</footer>
+</body>
+</html>
